@@ -100,7 +100,18 @@ body {
                     transition: all ease-in 200ms;
 
                     &:hover {
+                        animation: LOGO-HOVER 2s infinite;
+                    }
+                }
+
+                @keyframes LOGO-HOVER {
+                    0%,
+                    100% {
                         transform: scale(1.1);
+                    }
+
+                    50% {
+                        transform: scale(1.05);
                     }
                 }
             }

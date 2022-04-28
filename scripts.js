@@ -7,14 +7,12 @@ for (let i = 0; i < particleCount; i++) {
     particles.push(new particle());
 }
 
-class particle {
-    constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = canvas.height + Math.random() * 300;
-        this.speed = 1 + Math.random() / 2;
-        this.radius = Math.random() * 3;
-        this.opacity = (Math.random() * 100) / 1000;
-    }
+function particle() {
+    this.x = Math.random() * canvas.width;
+    this.y = canvas.height + Math.random() * 300;
+    this.speed = 1 + Math.random() / 2;
+    this.radius = Math.random() * 3;
+    this.opacity = (Math.random() * 100) / 1000;
 }
 
 function loop() {
